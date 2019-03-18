@@ -1,0 +1,55 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: fantasy;
+  background-image: url("/Users/scottholt/Desktop/Portfolio/Scotts Drum Kit/images/drummer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main {
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.7); }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 20px;
+  flex-wrap: wrap; }
+
+.key {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  width: 80px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all .1s; }
+  .key kbd {
+    font-size: 2.3em;
+    color: black; }
+  .key span {
+    font-size: .7em;
+    color: #ffc600;
+    text-shadow: 1px 1px 1px black; }
+
+.play {
+  transform: scale(1.1);
+  border: 1px solid #ffc600;
+  box-shadow: 0 0 10px #ffc600; }
+
+/*# sourceMappingURL=main.css.map */

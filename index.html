@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>Scotts Drum Kit</title>
+  </head>
+
+
+
+
+
+    <body>
+      <div class="main">
+        <div class="key" data-key="a">
+          <kbd>A</kbd>
+          <span class="sound">CLAP</span>
+        </div>
+        <div class="key" data-key="s">
+          <kbd>S</kbd>
+          <span class="sound">HAT</span>
+        </div>
+        <div class="key" data-key="d">
+          <kbd>D</kbd>
+          <span class="sound">KICK</span>
+        </div>
+        <div class="key" data-key="f">
+          <kbd>F</kbd>
+          <span class="sound">HAT TWO</span>
+        </div>
+        <div class="key" data-key="g">
+          <kbd>G</kbd>
+          <span class="sound">BOOM</span>
+        </div>
+        <div class="key" data-key="h">
+          <kbd>H</kbd>
+          <span class="sound">RIDE</span>
+        </div>
+        <div class="key" data-key="j">
+          <kbd>J</kbd>
+          <span class="sound">SNARE</span>
+        </div>
+        <div class="key" data-key="k">
+          <kbd>K</kbd>
+          <span class="sound">TOM</span>
+        </div>
+        <div class="key" data-key="l">
+          <kbd>L</kbd>
+          <span class="sound">BLOCK</span>
+        </div>
+      </div>
+
+      <audio src="sounds/clap.wav" data-key="a"></audio>
+      <audio src="sounds/hihat.wav" data-key="s"></audio>
+      <audio src="sounds/kick.wav" data-key="d"></audio>
+      <audio src="sounds/openhat.wav" data-key="f"></audio>
+      <audio src="sounds/boom.wav" data-key="g"></audio>
+      <audio src="sounds/ride.wav" data-key="h"></audio>
+      <audio src="sounds/snare.wav" data-key="j"></audio>
+      <audio src="sounds/tom.wav" data-key="k"></audio>
+      <audio src="sounds/tink.wav" data-key="l"></audio>
+
+      <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+$box-border:3px solid rgba(255,255,255,.7);
+$colors:(
+  white-font:rgba(255,255,255,.7),
+  yellow-color:#ffc600
+);
+
+@function colors($color) {
+  @return map-get($colors, $color)
+}
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------------
+
+
+* {
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+
+body {
+  // background-color:lightblue;
+  font-family:fantasy;
+  background-image:url("../images/drummer.jpg");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  // border:3px solid white;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+text-align:center;
+margin-top:20px;
+color:colors(white-font);
+}
+
+.main {
+  // border:$box-border;
+  // height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  margin:0 20px;
+  flex-wrap:wrap;
+}
+
+.key {
+  border:$box-border;
+  border-radius:5px;
+  box-shadow:1px 1px 1px black;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:10px;
+  margin:10px;
+  width:80px;
+  color:colors(white-font);
+  transition: all .1s;
+
+  kbd{
+    font-size:2.3em;
+    color:black;
+    // text-shadow:1px 1px 1px black;
+  }
+
+  span {
+    font-size:.7em;
+    color:colors(yellow-color);
+    text-shadow:1px 1px 1px black;
+  }
+}
+
+.play {
+transform: scale(1.1);
+border:1px solid colors(yellow-color);
+box-shadow: 0 0 10px colors(yellow-color);
+}
